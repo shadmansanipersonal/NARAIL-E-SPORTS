@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narail E-Sports | Official Gaming & E-Sports Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Floating Particles Background -->
+    <div class="particles-container" id="particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">NARAIL<span class="logo-accent">ESPORTS</span></span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#tournaments" class="nav-link">Tournaments</a></li>
+                <li><a href="#teams" class="nav-link">Teams</a></li>
+                <li><a href="#live" class="nav-link">Live</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge reveal-item">
+                <span class="badge-dot"></span>
+                <span>Official E-Sports Platform</span>
+            </div>
+            
+            <h1 class="hero-title reveal-item">
+                <span class="title-line">NARAIL</span>
+                <span class="title-line accent">E-SPORTS</span>
+            </h1>
+            
+            <p class="hero-subtitle reveal-item">Official Gaming & E-Sports Platform of Narail</p>
+            
+            <div class="hero-cta reveal-item">
+                <a href="#tournaments" class="btn btn-primary">
+                    <span class="btn-text">Join Tournament</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <a href="#live" class="btn btn-secondary">
+                    <span class="btn-text">Watch Live</span>
+                    <span class="btn-icon">▶</span>
+                </a>
+            </div>
+            
+            <div class="hero-stats reveal-item">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="150">0</span>
+                    <span class="stat-label">Tournaments</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2500">0</span>
+                    <span class="stat-label">Players</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span>
+                    <span class="stat-label">Teams</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-label">Sponsors</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <span>Scroll to Explore</span>
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Tournaments Section -->
+    <section class="tournaments" id="tournaments">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Competition</span>
+                <h2 class="section-title">Upcoming <span class="accent">Tournaments</span></h2>
+                <p class="section-subtitle">Join the action and compete for glory</p>
+            </div>
+            
+            <div class="tournaments-grid">
+                <div class="tournament-card reveal-on-scroll">
+                    <div class="card-glow"></div>
+                    <div class="tournament-image">
+                        <div class="game-badge">FPS</div>
+                        <div class="live-badge">LIVE SOON</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Narail Pro League Season 5</h3>
+                        <div class="tournament-meta">
+                            <span><i class="icon">🎮</i> Call of Duty</span>
+                            <span><i class="icon">💰</i> $10,000 Prize</span>
+                        </div>
+                        <div class="tournament-timer">
+                            <div class="timer-block">
+                                <span class="timer-value" id="days1">00</span>
+                                <span class="timer-label">Days</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="hours1">00</span>
+                                <span class="timer-label">Hours</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="minutes1">00</span>
+                                <span class="timer-label">Mins</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="seconds1">00</span>
+                                <span class="timer-label">Secs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-small">Register Now</a>
+                    </div>
+                </div>
+                
+                <div class="tournament-card reveal-on-scroll" data-delay="100">
+                    <div class="card-glow"></div>
+                    <div class="tournament-image">
+                        <div class="game-badge">MOBA</div>
+                        <div class="live-badge">REGISTRATION OPEN</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Narail Championship 2024</h3>
+                        <div class="tournament-meta">
+                            <span><i class="icon">🎮</i> Valorant</span>
+                            <span><i class="icon">💰</i> $15,000 Prize</span>
+                        </div>
+                        <div class="tournament-timer">
+                            <div class="timer-block">
+                                <span class="timer-value" id="days2">00</span>
+                                <span class="timer-label">Days</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="hours2">00</span>
+                                <span class="timer-label">Hours</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="minutes2">00</span>
+                                <span class="timer-label">Mins</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="seconds2">00</span>
+                                <span class="timer-label">Secs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-small">Register Now</a>
+                    </div>
+                </div>
+                
+                <div class="tournament-card reveal-on-scroll" data-delay="200">
+                    <div class="card-glow"></div>
+                    <div class="tournament-image">
+                        <div class="game-badge">SPORTS</div>
+                        <div class="live-badge">COMING SOON</div>
+                    </div>
+                    <div class="tournament-content">
+                        <h3>Winter Gaming Fest</h3>
+                        <div class="tournament-meta">
+                            <span><i class="icon">🎮</i> FIFA 24</span>
+                            <span><i class="icon">💰</i> $5,000 Prize</span>
+                        </div>
+                        <div class="tournament-timer">
+                            <div class="timer-block">
+                                <span class="timer-value" id="days3">00</span>
+                                <span class="timer-label">Days</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="hours3">00</span>
+                                <span class="timer-label">Hours</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="minutes3">00</span>
+                                <span class="timer-label">Mins</span>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-block">
+                                <span class="timer-value" id="seconds3">00</span>
+                                <span class="timer-label">Secs</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-small">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams" id="teams">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Elite Squads</span>
+                <h2 class="section-title">Our <span class="accent">Teams</span></h2>
+                <p class="section-subtitle">Meet the champions representing Narail</p>
+            </div>
+            
+            <div class="teams-grid">
+                <div class="team-card reveal-on-scroll">
+                    <div class="team-visual">
+                        <div class="team-avatar">
+                            <div class="avatar-inner">
+                                <span class="team-emoji">🐉</span>
+                            </div>
+                        </div>
+                        <div class="team-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Dragon Knights</h3>
+                        <span class="team-game">Valorant</span>
+                        <div class="team-stats">
+                            <span>🏆 12 Wins</span>
+                            <span>⭐ 4.8 Rating</span>
+                        </div>
+                        <div class="team-members">
+                            <div class="member">D</div>
+                            <div class="member">K</div>
+                            <div class="member">M</div>
+                            <div class="member">+2</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card reveal-on-scroll" data-delay="100">
+                    <div class="team-visual">
+                        <div class="team-avatar">
+                            <div class="avatar-inner">
+                                <span class="team-emoji">⚔️</span>
+                            </div>
+                        </div>
+                        <div class="team-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Shadow Wolves</h3>
+                        <span class="team-game">Call of Duty</span>
+                        <div class="team-stats">
+                            <span>🏆 18 Wins</span>
+                            <span>⭐ 4.9 Rating</span>
+                        </div>
+                        <div class="team-members">
+                            <div class="member">S</div>
+                            <div class="member">A</div>
+                            <div class="member">R</div>
+                            <div class="member">+3</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card reveal-on-scroll" data-delay="200">
+                    <div class="team-visual">
+                        <div class="team-avatar">
+                            <div class="avatar-inner">
+                                <span class="team-emoji">🔥</span>
+                            </div>
+                        </div>
+                        <div class="team-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Inferno Squad</h3>
+                        <span class="team-game">PUBG</span>
+                        <div class="team-stats">
+                            <span>🏆 25 Wins</span>
+                            <span>⭐ 4.7 Rating</span>
+                        </div>
+                        <div class="team-members">
+                            <div class="member">I</div>
+                            <div class="member">F</div>
+                            <div class="member">N</div>
+                            <div class="member">+1</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card reveal-on-scroll" data-delay="300">
+                    <div class="team-visual">
+                        <div class="team-avatar">
+                            <div class="avatar-inner">
+                                <span class="team-emoji">❄️</span>
+                            </div>
+                        </div>
+                        <div class="team-glow"></div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Frost Elite</h3>
+                        <span class="team-game">FIFA</span>
+                        <div class="team-stats">
+                            <span>🏆 15 Wins</span>
+                            <span>⭐ 4.6 Rating</span>
+                        </div>
+                        <div class="team-members">
+                            <div class="member">F</div>
+                            <div class="member">R</div>
+                            <div class="member">Z</div>
+                            <div class="member">+1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Match Section -->
+    <section class="live-section" id="live">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge pulse">🔴 LIVE NOW</span>
+                <h2 class="section-title">Live <span class="accent">Match</span></h2>
+                <p class="section-subtitle">Watch the action unfold in real-time</p>
+            </div>
+            
+            <div class="live-container reveal-on-scroll">
+                <div class="live-stream">
+                    <div class="stream-placeholder">
+                        <div class="stream-overlay">
+                            <div class="live-indicator">
+                                <span class="live-dot"></span>
+                                LIVE
+                            </div>
+                            <h3>Grand Finals - Narail Pro League</h3>
+                            <p>Dragon Knights vs Shadow Wolves</p>
+                            <div class="stream-stats">
+                                <div class="viewer-count">
+                                    <span class="viewer-icon">👁</span>
+                                    <span id="viewerCount">12,450</span> watching
+                                </div>
+                            </div>
+                        </div>
+                        <div class="play-button">
+                            <span>▶</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="match-info">
+                    <div class="match-teams">
+                        <div class="team team-left">
+                            <div class="team-flag">🐉</div>
+                            <span class="team-name">Dragon Knights</span>
+                            <span class="team-score" id="score1">2</span>
+                        </div>
+                        <div class="match-vs">VS</div>
+                        <div class="team team-right">
+                            <span class="team-score" id="score2">1</span>
+                            <span class="team-name">Shadow Wolves</span>
+                            <div class="team-flag">⚔️</div>
+                        </div>
+                    </div>
+                    <div class="match-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 66%"></div>
+                        </div>
+                        <span class="match-round">Map 3: Ascent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Highlights</span>
+                <h2 class="section-title">Gaming <span class="accent">Gallery</span></h2>
+                <p class="section-subtitle">Moments of glory and victory</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-on-scroll" data-delay="0">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">🎮</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Championship Victory</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal-on-scroll" data-delay="50">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">🏆</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Trophy Ceremony</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal-on-scroll" data-delay="100">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">🎯</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Pro Player Moment</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal-on-scroll" data-delay="150">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">⚡</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Epic Team Play</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal-on-scroll" data-delay="200">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">🎪</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Live Event</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item reveal-on-scroll" data-delay="250">
+                    <div class="gallery-image">
+                        <div class="gallery-placeholder">🌟</div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <span>Player Spotlight</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Community Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Join Us</span>
+                <h2 class="section-title">Join the <span class="accent">Community</span></h2>
+                <p class="section-subtitle">Connect with fellow gamers and stay updated</p>
+            </div>
+            
+            <div class="contact-wrapper reveal-on-scroll">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject">
+                                <option value="">Select Topic</option>
+                                <option value="tournament">Tournament Inquiry</option>
+                                <option value="team">Team Registration</option>
+                                <option value="sponsorship">Sponsorship</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <div class="social-grid">
+                        <a href="#" class="social-link" data-platform="discord">
+                            <span>💬</span>
+                            <span class="social-label">Discord</span>
+                        </a>
+                        <a href="#" class="social-link" data-platform="twitter">
+                            <span>🐦</span>
+                            <span class="social-label">Twitter</span>
+                        </a>
+                        <a href="#" class="social-link" data-platform="twitch">
+                            <span>📺</span>
+                            <span class="social-label">Twitch</span>
+                        </a>
+                        <a href="#" class="social-link" data-platform="youtube">
+                            <span>▶️</span>
+                            <span class="social-label">YouTube</span>
+                        </a>
+                        <a href="#" class="social-link" data-platform="instagram">
+                            <span>📸</span>
+                            <span class="social-label">Instagram</span>
+                        </a>
+                        <a href="#" class="social-link" data-platform="facebook">
+                            <span>📘</span>
+                            <span class="social-label">Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">NARAIL<span class="logo-accent">ESPORTS</span></span>
+                    </a>
+                    <p>The premier E-Sports platform of Narail, bringing competitive gaming to the next level.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#tournaments">Tournaments</a></li>
+                            <li><a href="#teams">Teams</a></li>
+                            <li><a href="#live">Live</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Tournaments</h4>
+                        <ul>
+                            <li><a href="#">Active Tournaments</a></li>
+                            <li><a href="#">Past Winners</a></li>
+                            <li><a href="#">Rules & Regulations</a></li>
+                            <li><a href="#">Prize Pool</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Narail E-Sports. All rights reserved.</p>
+                <div class="footer-glow"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
